@@ -1,0 +1,25 @@
+<LockScreen>:
+    size_hint: 0.8, 0.5
+    separator_height: 0
+    title_size: 20
+    title_align: 'center'
+    background_color: 0.2, 0.2, 0.2, 1
+
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 20
+        spacing: 10
+
+        Label:
+            id: status
+            text: root.content.text
+            font_size: 18
+            color: 1, 1, 1, 1
+
+        Button:
+            text: "Simular Volume Up"
+            on_press: root.on_key_down('volume_up')
+
+        Button:
+            text: "Simular Power"
+            on_press: root.on_key_down('power')
